@@ -6,3 +6,4 @@ public interface ProductMenu {
     public void showLabels();
     public void showComboxes();
 }
+// Which will acts ass a bridge

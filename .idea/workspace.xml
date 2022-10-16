@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f0c1bd7-6a7b-4fbf-9a84-f61008debfb9" name="Changes" comment="Created a new project for design pattern assignment individual">
-      <change afterPath="$PROJECT_DIR$/src/Facade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OfferingMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProductMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Reminder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TradingMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserInfoItem.java" afterDir="false" />
+    <list default="true" id="0f0c1bd7-6a7b-4fbf-9a84-f61008debfb9" name="Changes" comment="Facade design pattern classes has been added in the git">
+      <change afterPath="$PROJECT_DIR$/src/Buyer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MeatProductMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProduceProductMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Facade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665521473842</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Facade design pattern classes has been added in the git">
+      <created>1665945821919</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665945821919</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,6 +93,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created a new project for design pattern assignment individual" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a new project for design pattern assignment individual" />
+    <MESSAGE value="Facade design pattern classes has been added in the git" />
+    <option name="LAST_COMMIT_MESSAGE" value="Facade design pattern classes has been added in the git" />
   </component>
 </project>
