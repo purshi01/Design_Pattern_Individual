@@ -1,6 +1,18 @@
 public abstract class Person {
 
-    private ProductMenu productMenu;
+     ProductMenu productMenu;
+     private String name;
+
+    public Person() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public abstract void showMenu();
 
@@ -20,6 +32,6 @@ public abstract class Person {
 
     }
 
-    public abstract ProductMenu CreateProductMenu();
+    public abstract ProductMenu CreateProductMenu(int productType) throws Exception;
 
 }
