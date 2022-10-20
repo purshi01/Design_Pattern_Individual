@@ -1,7 +1,6 @@
 public class Seller extends Person {
     public Seller() throws Exception {
 
-        super(productMenu);
     }
 
     @Override

@@ -25,6 +25,8 @@ public class Facade extends Person{
         //Bridge design pattern is user here where person is abstract class and product menu is interface with two concrete
         //classes MeatProductMenu and ProduceProductMenu
         super(meatProductMenu,produceProductMenu);
+        this.meatProductMenu = meatProductMenu;
+        this.produceProductMenu = produceProductMenu;
         this.login = new Login();
         this.classProductList = new ClassProductList();
         this.theProductList = classProductList.getProductList();
@@ -76,6 +78,22 @@ public class Facade extends Person{
     }
     public boolean login(String name,String password,int user) {
         return login.login(name,password,user);
+    }
+
+    // Factory design pattern  which will let the subclasses decide to instantiate the object
+    public ProductMenu selectProductMenu(String menu) throws Exception {
+        if(menu == null){
+            return null;
+        }
+        if(menu.equalsIgnoreCase("Meat")){
+            return new MeatProductMenu();
+
+        } else if(menu.equalsIgnoreCase("Produce")){
+            return new ProduceProductMenu();
+
+        }
+
+        return null;
     }
 
     public void addTrading() {

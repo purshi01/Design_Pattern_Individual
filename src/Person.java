@@ -1,7 +1,9 @@
 public abstract class Person {
 
-     ProductMenu meatProductMenu;
+    ProductMenu meatProductMenu;
     ProductMenu produceProductMenu;
+
+    ProductMenu productMenu;
      private String name;
 
     public Person(ProductMenu meatProductMenu,ProductMenu produceProductMenu) throws Exception {
