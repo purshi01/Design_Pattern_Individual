@@ -80,4 +80,31 @@ public class ProduceProductMenu implements ProductMenu {
     public void add(Product product) {
         productList.add(product);
     }
+    //Iterator Design pattern used here
+    @Override
+    public ListIterator getIterator() {
+        return new NameIterator();
+    }
+    private class NameIterator implements ListIterator {
+
+        int index;
+
+        @Override
+        public boolean hasNext() {
+
+            if(index < productList.size()){
+                return true;
+            }
+            return false;
+        }
+
+        @Override
+        public Object next() {
+
+            if(this.hasNext()){
+                return productList.get(index++);
+            }
+            return null;
+        }
+    }
 }

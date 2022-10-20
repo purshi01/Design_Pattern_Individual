@@ -81,4 +81,9 @@ public class MeatProductMenu implements ProductMenu {
     public void add(Product product) {
         productList.add(product);
     }
+
+    @Override
+    public ListIterator getIterator() {
+        return null;
+    }
 }

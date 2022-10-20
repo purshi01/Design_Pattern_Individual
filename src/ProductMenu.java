@@ -6,5 +6,6 @@ public interface ProductMenu {
     public void showLabels();
     public void showComboxes();
     public void add(Product product);
+    public ListIterator getIterator();
 }
 // Which will acts ass a bridge

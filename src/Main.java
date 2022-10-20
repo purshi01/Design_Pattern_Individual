@@ -29,12 +29,22 @@ public class Main {
 
                     facade.showMenu();
                     while (true) {
-                        System.out.println("Enter 0 to see available Meat Product menu, 1 to Produce Product menu and 2 to add the product to sell ");
+                        System.out.println("Enter 0 to see available Meat Product menu, 1 to Produce Product menu and 2 to add the product to your list ");
                         int productMenu = scnInt.nextInt();
                         if (productMenu == 0) {
                             facade.meatProductMenu.ShowMenu();
                         } else if (productMenu == 1) {
-                            facade.produceProductMenu.ShowMenu();
+                            System.out.println("Meat Product Menu");
+                            String leftAlignFormat = "| %-15s | %-15s |%n";
+                            System.out.format("+-----------------+------+%n");
+                            System.out.format("| Product Category   | Product name |%n");
+                            System.out.format("+-----------------+------+%n");
+               //Iterator Design pattern used here
+                            for (ListIterator iter = facade.produceProductMenu.getIterator(); iter.hasNext(); ) {
+                                Product product = (Product) iter.next();
+                                System.out.format(leftAlignFormat, product.getProductCategory(), product.getProductName());
+                            }
+                            System.out.format("+-----------------+------+%n");
                         } else if (productMenu == 2) {
                             break;
 
@@ -87,7 +97,7 @@ public class Main {
                     System.out.println("Successfully logged in");
                     facade.showUserProductList(name);
                     while (true) {
-                        System.out.println("Enter 0 to display Meat Product menu, 1 to Produce Product menu and 2 to add the product in your list ");
+                        System.out.println("Enter 0 to display Meat Product menu, 1 to Produce Product menu and 2 to create the product to sell ");
                         int productMenu = scnInt.nextInt();
                         if (productMenu == 0) {
                             facade.selectProductMenu("Meat").ShowMenu();
@@ -109,13 +119,13 @@ public class Main {
                             String productCategory = scnStr.nextLine();
                             System.out.println("Enter the product name that you want to add to your list");
                             String productname = scnStr.nextLine();
-                            if(!facade.theProductList.contains(new Product(productCategory,productname))){
+                            if (!facade.theProductList.contains(new Product(productCategory, productname))) {
                                 facade.addUserProductToList(name, new Product(productname));
-                                facade.theProductList.add(new Product(productCategory,productname));
-                            }else {
+                                facade.theProductList.add(new Product(productCategory, productname));
+                            } else {
                                 System.out.println("!!!!!The product already exist in store");
                             }
-                                facade.showUserProductList(name);
+                            facade.showUserProductList(name);
                         } else if (input == 1) {
                             System.out.println("Enter the product name that you want to delete");
                             String productname = scnStr.nextLine();
@@ -127,7 +137,7 @@ public class Main {
                                 System.out.println("Error!!! Please enter the product which showed in below list!!!!!!!!");
                                 facade.showUserProductList(name);
                             }
-                        } else if (input ==2) {
+                        } else if (input == 2) {
                             break;
                         } else {
                             System.out.println("Invalid entry !!!!!!!!!!!!");

@@ -9,13 +9,4 @@ public class OfferingIterator extends OfferingList implements ListIterator{
         return null;
     }
 
-    @Override
-    public void moveToHead() {
-
-    }
-
-    @Override
-    public void remove() {
-
-    }
 }
