@@ -7,7 +7,8 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        Facade facade = new Facade();
+        Facade facade = new Facade(new MeatProductMenu(),new ProduceProductMenu());
+
         Scanner scnInt = new Scanner(System.in);
         Scanner scnStr = new Scanner(System.in);
 
@@ -23,13 +24,27 @@ public class Main {
                 name = scnStr.nextLine();
                 System.out.println("Enter User Password");
                 password = scnStr.nextLine();
-                if (facade.login(name, password)) {
+                if (facade.login(name, password,userType)) {
                     System.out.println("Successfully logged in");
 
-                       facade.showProductLis();
-                       facade.showUserProductList(name);
+                    facade.showMenu();
+                    while(true){
+                    System.out.println("Enter 0 to display Meat Product menu, 1 to Produce Product menu and 2 to add the product in your list ");
+                    int productMenu = scnInt.nextInt();
+                    if (productMenu == 0) {
+                        facade.meatProductMenu.ShowMenu();
+                    } else if (productMenu == 1) {
+                        facade.produceProductMenu.ShowMenu();
+                    } else if (productMenu == 2) {
+                        break;
+
+                    } else {
+                        System.out.println("Invalid entry !!!!!!!!!!!!");
+                    }
+                }
+                    facade.showUserProductList(name);
                     while(true) {
-                       System.out.println("Enter 0 for add the product and 1 for delete the product");
+                       System.out.println("Enter 0 to add the product and 1 to delete the product ");
                        int input = scnInt.nextInt();
                        if (input == 0) {
                                System.out.println("Enter the product name that you want to add to your list");
@@ -41,7 +56,7 @@ public class Main {
                                }
                                else{
                                    System.out.println("Error!!! Please enter the product which showed in below list!!!!!!!!");
-                                   facade.showProductLis();
+                                   facade.showMenu();
                                }
                                
 
@@ -57,9 +72,11 @@ public class Main {
                                System.out.println("Error!!! Please enter the product which showed in below list!!!!!!!!");
                                facade.showUserProductList(name);
                            }
+                       } else {
+                           System.out.println("Invalid entry !!!!!!!!!!!!");
                        }
 
-                   }
+                    }
                 } else {
                     System.out.println("Invalid Credentials please try again");
                 }
@@ -68,11 +85,13 @@ public class Main {
                 name = scnStr.nextLine();
                 System.out.println("Enter User Password");
                 password = scnStr.nextLine();
-                if (facade.login(name, password)) {
+                if (facade.login(name, password,userType)) {
                     System.out.println("Successfully logged in");
+                }else {
+                    System.out.println("Invalid Credentials please try again");
                 }
             } else {
-                System.out.println("Invalid Credentials please try again");
+                System.out.println("Invalid user type please try again");
             }
 
         }

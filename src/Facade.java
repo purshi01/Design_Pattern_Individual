@@ -1,8 +1,6 @@
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.*;
 
-public class Facade {
+public class Facade extends Person{
 
     private int UserType;
     Product theSelectedProduct;
@@ -12,6 +10,8 @@ public class Facade {
     Person thePerson;
     Login login;
     String userProduct[];
+    ProductMenu meatProductMenu;
+    ProductMenu produceProductMenu;
 
     public Facade(int userType, Product theSelectedProduct, int nProductCategory, Person thePerson) throws Exception {
         UserType = userType;
@@ -20,15 +20,19 @@ public class Facade {
         this.thePerson = thePerson;
 
     }
-
-    public Facade() throws Exception {
-        login = new Login();
-        classProductList = new ClassProductList();
-        theProductList = classProductList.getProductList();
+//Facade design pattern is used here product Menu is interface
+    public Facade(ProductMenu meatProductMenu, ProductMenu produceProductMenu) throws Exception {
+        //Bridge design pattern is user here where person is abstract class and product menu is interface with two concrete
+        //classes MeatProductMenu and ProduceProductMenu
+        super(meatProductMenu,produceProductMenu);
+        this.login = new Login();
+        this.classProductList = new ClassProductList();
+        this.theProductList = classProductList.getProductList();
 
     }
 
-    public void showProductLis(){
+    @Override
+    public void showMenu() {
         System.out.println("List of products");
         String leftAlignFormat = "| %-15s | %-15s |%n";
 
@@ -41,6 +45,12 @@ public class Facade {
 
         System.out.format("+-----------------+------+%n");
     }
+
+    @Override
+    public ProductMenu CreateProductMenu(int productType) throws Exception {
+        return null;
+    }
+
     public void showUserProductList(String name) throws Exception {
         System.out.println("List of your products");
         String leftAlignFormat2 = "| %-15s | %-15s |%n";
@@ -64,8 +74,8 @@ public class Facade {
     public void deleteUserProductToList(String user, String productName) throws Exception {
         classProductList.deleteUserProductToList(user,productName);
     }
-    public boolean login(String name,String password) {
-        return login.login(name,password);
+    public boolean login(String name,String password,int user) {
+        return login.login(name,password,user);
     }
 
     public void addTrading() {

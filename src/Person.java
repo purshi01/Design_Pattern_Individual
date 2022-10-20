@@ -1,7 +1,13 @@
 public abstract class Person {
 
-     ProductMenu productMenu;
+     ProductMenu meatProductMenu;
+    ProductMenu produceProductMenu;
      private String name;
+
+    public Person(ProductMenu meatProductMenu,ProductMenu produceProductMenu) throws Exception {
+      this.meatProductMenu = meatProductMenu;
+      this.produceProductMenu =produceProductMenu;
+    }
 
     public Person() {
     }

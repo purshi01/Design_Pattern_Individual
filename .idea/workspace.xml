@@ -1,30 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f0c1bd7-6a7b-4fbf-9a84-f61008debfb9" name="Changes" comment="Bridge design pattern classes has been added in the git">
-      <change afterPath="$PROJECT_DIR$/src/ClassProductList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataBase/BuyerInfo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataBase/ProductInfo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataBase/SellerInfo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataBase/UserProduct.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ListIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NodeVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OfferingIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OfferingList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProductIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ReminderVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Trading.java" afterDir="false" />
+    <list default="true" id="0f0c1bd7-6a7b-4fbf-9a84-f61008debfb9" name="Changes" comment="facade implementation is done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Buyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buyer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Facade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeatProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeatProductMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProduceProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProduceProductMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reminder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reminder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Seller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,13 +42,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
@@ -101,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665948344804</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="facade implementation is done">
+      <created>1666147599915</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666147599915</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,24 +110,25 @@
     <MESSAGE value="Created a new project for design pattern assignment individual" />
     <MESSAGE value="Facade design pattern classes has been added in the git" />
     <MESSAGE value="Bridge design pattern classes has been added in the git" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bridge design pattern classes has been added in the git" />
+    <MESSAGE value="facade implementation is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="facade implementation is done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>36</line>
+          <line>51</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>30</line>
+          <line>45</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>32</line>
+          <line>47</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
