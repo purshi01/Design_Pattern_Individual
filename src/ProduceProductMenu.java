@@ -85,6 +85,13 @@ public class ProduceProductMenu implements ProductMenu {
     public ListIterator getIterator() {
         return new NameIterator();
     }
+    //   Visitor Design pattern is used here
+    @Override
+    public void accept(NodeVisitor nodeVisitor) throws Exception {
+        nodeVisitor.visit(this);
+
+    }
+    //Iterator Design pattern used here
     private class NameIterator implements ListIterator {
 
         int index;

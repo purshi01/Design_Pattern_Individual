@@ -1,18 +1,13 @@
-public class ReminderVisitor extends NodeVisitor{
+public class ReminderVisitor implements NodeVisitor{
+
 
     @Override
-    public void visitFacade(Facade facade) {
-        System.out.println("Visited facade");
+    public void visit(ProductMenu product) throws Exception {
+        product.ShowMenu();
     }
 
     @Override
-    public void visitTrading(Trading trading) {
-        System.out.println("Visited trading");
-    }
-
-    @Override
-    public void visitProduct(ClassProductList product) {
-        System.out.println("Visited product");
-
+    public void visit(Facade facade) {
+        facade.showMenu();
     }
 }

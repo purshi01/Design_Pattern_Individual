@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Facade extends Person{
+public class Facade extends Person implements ProductMenu{
 
     private int UserType;
     Product theSelectedProduct;
@@ -25,6 +25,7 @@ public class Facade extends Person{
         //Bridge design pattern is user here where person is abstract class and product menu is interface with two concrete
         //classes MeatProductMenu and ProduceProductMenu
         super(meatProductMenu,produceProductMenu);
+
         this.meatProductMenu = meatProductMenu;
         this.produceProductMenu = produceProductMenu;
         this.login = new Login();
@@ -141,7 +142,30 @@ public class Facade extends Person{
 
     }
 
-    public void accept(NodeVisitor nodeVisitor) {
-        nodeVisitor.visitFacade(this);
+    @Override
+    public void ShowMenu() {
+
+    }
+
+    @Override
+    public void showComboxes() {
+
+    }
+
+    @Override
+    public void add(Product product) {
+
+    }
+
+    @Override
+    public ListIterator getIterator() {
+        return null;
+    }
+    //   Visitor Design pattern is used here
+    public void accept(NodeVisitor nodeVisitor) throws Exception {
+        nodeVisitor.visit(this);
+        nodeVisitor.visit(meatProductMenu);
+        nodeVisitor.visit(produceProductMenu);
+
     }
 }

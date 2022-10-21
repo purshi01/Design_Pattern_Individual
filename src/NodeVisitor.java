@@ -1,8 +1,6 @@
 import java.util.List;
 
-public abstract class NodeVisitor {
-
-    public abstract void visitFacade(Facade facade);
-    public abstract void visitTrading(Trading trading);
-    public abstract void visitProduct(ClassProductList products);
+public interface  NodeVisitor {
+    public abstract void visit(ProductMenu products) throws Exception;
+    public abstract void visit(Facade facade);
 }

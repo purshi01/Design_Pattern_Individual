@@ -94,8 +94,4 @@ public class ClassProductList {
         this.productList = productList;
     }
 
-    public void accept(NodeVisitor nodeVisitor) {
-        nodeVisitor.visitProduct(this);
-    }
-
 }

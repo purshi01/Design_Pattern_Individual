@@ -7,5 +7,6 @@ public interface ProductMenu {
     public void showComboxes();
     public void add(Product product);
     public ListIterator getIterator();
+    public void accept(NodeVisitor nodeVisitor) throws Exception;
 }
 // Which will acts ass a bridge

@@ -9,6 +9,9 @@ public class Main {
     public static void main(String[] args) throws Exception {
         Facade facade = new Facade(new MeatProductMenu(), new ProduceProductMenu());
 
+//   Visitor Design pattern is used here
+        facade.accept(new ReminderVisitor());
+
         Scanner scnInt = new Scanner(System.in);
         Scanner scnStr = new Scanner(System.in);
 

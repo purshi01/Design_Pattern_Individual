@@ -86,4 +86,10 @@ public class MeatProductMenu implements ProductMenu {
     public ListIterator getIterator() {
         return null;
     }
+    //   Visitor Design pattern is used here
+    @Override
+    public void accept(NodeVisitor nodeVisitor) throws Exception {
+        nodeVisitor.visit(this);
+
+    }
 }
