@@ -1,27 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f0c1bd7-6a7b-4fbf-9a84-f61008debfb9" name="Changes" comment="" />
+    <list default="true" id="0f0c1bd7-6a7b-4fbf-9a84-f61008debfb9" name="Changes" comment="visit Design pattern is implementation is done">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Facade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReminderVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DisplayProductMenuBasedOnVisitor.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2G0N9cr1OuepShjvQyZZ5ZehXeJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -31,6 +60,63 @@
       <option name="presentableId" value="Default" />
       <updated>1665521394108</updated>
     </task>
+    <task id="LOCAL-00001" summary="Created a new project for design pattern assignment individual">
+      <created>1665521473842</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665521473842</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Facade design pattern classes has been added in the git">
+      <created>1665945821919</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665945821919</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Bridge design pattern classes has been added in the git">
+      <created>1665948344804</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665948344804</updated>
+    </task>
+    <task id="LOCAL-00004" summary="facade implementation is done">
+      <created>1666147599915</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666147599915</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Bridge Design pattern is implementation is done">
+      <created>1666224849829</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666224849830</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Factory Design pattern is implementation is done">
+      <created>1666252020302</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666252020302</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Iterator Design pattern is implementation is done">
+      <created>1666293922667</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666293922667</updated>
+    </task>
+    <task id="LOCAL-00008" summary="visit Design pattern is implementation is done">
+      <created>1666314110380</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666314110380</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -43,5 +129,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Created a new project for design pattern assignment individual" />
+    <MESSAGE value="Facade design pattern classes has been added in the git" />
+    <MESSAGE value="Bridge design pattern classes has been added in the git" />
+    <MESSAGE value="facade implementation is done" />
+    <MESSAGE value="Bridge Design pattern is implementation is done" />
+    <MESSAGE value="Factory Design pattern is implementation is done" />
+    <MESSAGE value="Iterator Design pattern is implementation is done" />
+    <MESSAGE value="visit Design pattern is implementation is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="visit Design pattern is implementation is done" />
   </component>
 </project>
