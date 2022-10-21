@@ -10,7 +10,7 @@ public class Main {
         Facade facade = new Facade(new MeatProductMenu(), new ProduceProductMenu());
 
 //   Visitor Design pattern is used here
-        facade.accept(new ReminderVisitor());
+        facade.accept(new DisplayProductMenuBasedOnVisitor());
 
         Scanner scnInt = new Scanner(System.in);
         Scanner scnStr = new Scanner(System.in);

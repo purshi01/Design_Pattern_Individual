@@ -22,7 +22,7 @@ public class Facade extends Person implements ProductMenu{
     }
 //Facade design pattern is used here product Menu is interface
     public Facade(ProductMenu meatProductMenu, ProductMenu produceProductMenu) throws Exception {
-        //Bridge design pattern is user here where person is abstract class and product menu is interface with two concrete
+        //Bridge design pattern is used here where person is abstract class and product menu is interface with two concrete
         //classes MeatProductMenu and ProduceProductMenu
         super(meatProductMenu,produceProductMenu);
 
